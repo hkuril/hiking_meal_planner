@@ -50,7 +50,8 @@ def main():
     # Divide by the number of days to get the daily amount of each nutrient.
     n_days = 7 + (1.0/3.0)
     daily_totals = totals / n_days
-
+    
+    print("Daily totals for {:.2f} days:".format(n_days))
     with pd.option_context("display.precision", 1):
         print(daily_totals)
 
